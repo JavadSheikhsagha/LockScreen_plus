@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/widget_remove_cv"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:backgroundTint="#C9C9C9"
+            android:layout_marginLeft="2dp"
+            app:cardCornerRadius="9dp"
+            app:cardElevation="1dp"
+            android:layout_marginBottom="-12dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                android:backgroundTint="@color/black"
+                android:layout_gravity="center"
+                app:cardCornerRadius="6dp"
+                android:layout_marginHorizontal="4dp"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/widget_back"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#A1A1A1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                android:layout_marginHorizontal="7dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="22dp"
+                    android:src="@drawable/img_phone" />
+
+                <com.owl93.dpb.CircularProgressView
+                    android:id="@+id/widget_battery_squ_progress_bar"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center"
+                    app:drawTrack="true"
+                    app:progress="28"
+                    app:strokeColor="@color/white"
+                    app:strokeGradientStyle="linear"
+                    app:strokeWidth="6dp"
+                    app:trackColor="#C6C6C6"
+                    app:trackWidth="6dp" />
+
+                <ImageView
+                    android:id="@+id/click_here"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

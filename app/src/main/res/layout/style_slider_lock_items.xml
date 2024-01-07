@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/video_card_cv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="6dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/image_slide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/border_selected"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/image_emoji_slide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/top_widget_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="58dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/top_widget_tv_change_lock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wednesday, September 7"
+                        android:layout_marginVertical="4dp"
+                        android:fontFamily="@font/sf_pro_display_light"
+                        android:textColor="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/clock_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/top_widget_ll">
+
+                    <TextView
+                        android:id="@+id/clock_tv_slider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="22:28"
+                        android:textColor="@color/white"
+                        android:textSize="64sp" />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/image_front"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/widgets_ll_slider_lock"
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp"
+                    android:layout_marginHorizontal="24dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clock_ll">
+
+
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

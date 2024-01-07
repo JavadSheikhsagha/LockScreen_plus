@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "251779563420",
+    "project_id": "enigma-plus",
+    "storage_bucket": "enigma-plus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251779563420:android:05159f1eb84bdd2e71d259",
+        "android_client_info": {
+          "package_name": "com.a2mp.aigirlfriend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsfTcr9z0hc8xS4XupvGeSbqZq4QdPFwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251779563420:android:b44024f7d183f25571d259",
+        "android_client_info": {
+          "package_name": "com.a2mp.lockscreen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsfTcr9z0hc8xS4XupvGeSbqZq4QdPFwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

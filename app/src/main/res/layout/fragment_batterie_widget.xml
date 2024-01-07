@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_dialog_widgets"
+    tools:context=".Widgets.BatterieWidgetFragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/esc_btn_cat_battery"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#C9C9C9"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="6dp"
+                android:src="@drawable/icon_cross" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/img_battery"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:layout_marginLeft="14dp"
+            android:text="Batterie"
+            android:textColor="#353838"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:text="Status"
+            android:textColor="#353838"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:gravity="center"
+            android:text="Keep track of the battery levels of your devices."
+            android:textColor="#888888"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+
+            <LinearLayout
+                android:id="@+id/battery_widget_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card12"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#A1A1A1"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="22dp"
+                            android:src="@drawable/img_phone" />
+
+                        <com.owl93.dpb.CircularProgressView
+                            android:layout_width="58dp"
+                            android:layout_height="58dp"
+                            android:layout_gravity="center"
+                            app:drawTrack="true"
+                            app:progress="28"
+                            app:strokeColor="@color/white"
+                            app:strokeGradientStyle="linear"
+                            app:strokeWidth="6dp"
+                            app:trackColor="#C6C6C6"
+                            app:trackWidth="6dp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/battery_widget_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card846513"
+                        android:layout_width="170dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#A1A1A1"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="12dp"
+                            android:paddingTop="6dp"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="14dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/img_phone" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/sf_pro_display_semibold"
+                                    android:text="%28"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sf_pro_display_semibold"
+                                android:text="Phone name"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+                                android:id="@+id/progress_bar_horizontal"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp"
+                                android:layout_marginEnd="18dp"
+                                android:indeterminate="false"
+                                android:maxHeight="12dp"
+                                android:minHeight="12dp"
+                                android:progress="28"
+                                app:backgroundColor="#C6C6C6"
+                                app:progressColor="#FFFFFF" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="46dp"
+            android:fontFamily="@font/sf_pro_display_semibold"
+            android:gravity="center"
+            android:text="Tap to add widget."
+            android:textColor="#888888"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>

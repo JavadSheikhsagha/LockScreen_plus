@@ -1,0 +1,954 @@
+[
+  {
+    "name": "Love",
+    "value": "💌"
+  },
+  {
+    "name": "Hole",
+    "value": "🕳️"
+  },
+  {
+    "name": "Bomb",
+    "value": "💣"
+  },
+  {
+    "name": "Person",
+    "value": "🛀"
+  },
+  {
+    "name": "Person",
+    "value": "🛌"
+  },
+  {
+    "name": "Kitchen",
+    "value": "🔪"
+  },
+  {
+    "name": "Amphora",
+    "value": "🏺"
+  },
+  {
+    "name": "World",
+    "value": "🗺️"
+  },
+  {
+    "name": "Compass",
+    "value": "🧭"
+  },
+  {
+    "name": "Brick",
+    "value": "🧱"
+  },
+  {
+    "name": "Barber",
+    "value": "💈"
+  },
+  {
+    "name": "Manual",
+    "value": "🦽"
+  },
+  {
+    "name": "Motorized",
+    "value": "🦼"
+  },
+  {
+    "name": "Oil",
+    "value": "🛢️"
+  },
+  {
+    "name": "Bellhop",
+    "value": "🛎️"
+  },
+  {
+    "name": "Luggage",
+    "value": "🧳"
+  },
+  {
+    "name": "Hourglass",
+    "value": "⌛"
+  },
+  {
+    "name": "Hourglass",
+    "value": "⏳"
+  },
+  {
+    "name": "Watch",
+    "value": "⌚"
+  },
+  {
+    "name": "Alarm",
+    "value": "⏰"
+  },
+  {
+    "name": "Stopwatch",
+    "value": "⏱️"
+  },
+  {
+    "name": "Timer",
+    "value": "⏲️"
+  },
+  {
+    "name": "Mantelpiece",
+    "value": "🕰️"
+  },
+  {
+    "name": "Thermometer",
+    "value": "🌡️"
+  },
+  {
+    "name": "Umbrella",
+    "value": "⛱️"
+  },
+  {
+    "name": "Firecracker",
+    "value": "🧨"
+  },
+  {
+    "name": "Balloon",
+    "value": "🎈"
+  },
+  {
+    "name": "Party",
+    "value": "🎉"
+  },
+  {
+    "name": "Confetti",
+    "value": "🎊"
+  },
+  {
+    "name": "Japanese",
+    "value": "🎎"
+  },
+  {
+    "name": "Carp",
+    "value": "🎏"
+  },
+  {
+    "name": "Wind",
+    "value": "🎐"
+  },
+  {
+    "name": "Red",
+    "value": "🧧"
+  },
+  {
+    "name": "Ribbon",
+    "value": "🎀"
+  },
+  {
+    "name": "Wrapped",
+    "value": "🎁"
+  },
+  {
+    "name": "Diving",
+    "value": "🤿"
+  },
+  {
+    "name": "Yo-Yo",
+    "value": "🪀"
+  },
+  {
+    "name": "Kite",
+    "value": "🪁"
+  },
+  {
+    "name": "Crystal",
+    "value": "🔮"
+  },
+  {
+    "name": "Magic",
+    "value": "🪄"
+  },
+  {
+    "name": "Nazar",
+    "value": "🧿"
+  },
+  {
+    "name": "Hamsa",
+    "value": "🪬"
+  },
+  {
+    "name": "Joystick",
+    "value": "🕹️"
+  },
+  {
+    "name": "Teddy",
+    "value": "🧸"
+  },
+  {
+    "name": "Piñata",
+    "value": "🪅"
+  },
+  {
+    "name": "Nesting",
+    "value": "🪆"
+  },
+  {
+    "name": "Framed",
+    "value": "🖼️"
+  },
+  {
+    "name": "Thread",
+    "value": "🧵"
+  },
+  {
+    "name": "Sewing",
+    "value": "🪡"
+  },
+  {
+    "name": "Yarn",
+    "value": "🧶"
+  },
+  {
+    "name": "Knot",
+    "value": "🪢"
+  },
+  {
+    "name": "Folding",
+    "value": "🪭"
+  },
+  {
+    "name": "Shopping",
+    "value": "🛍️"
+  },
+  {
+    "name": "Prayer",
+    "value": "📿"
+  },
+  {
+    "name": "Hair",
+    "value": "🪮"
+  },
+  {
+    "name": "Gem",
+    "value": "💎"
+  },
+  {
+    "name": "Postal",
+    "value": "📯"
+  },
+  {
+    "name": "Studio",
+    "value": "🎙️"
+  },
+  {
+    "name": "Level",
+    "value": "🎚️"
+  },
+  {
+    "name": "Control",
+    "value": "🎛️"
+  },
+  {
+    "name": "Radio",
+    "value": "📻"
+  },
+  {
+    "name": "Banjo",
+    "value": "🪕"
+  },
+  {
+    "name": "Mobile",
+    "value": "📱"
+  },
+  {
+    "name": "Mobile",
+    "value": "📲"
+  },
+  {
+    "name": "Telephone",
+    "value": "☎️"
+  },
+  {
+    "name": "Telephone",
+    "value": "📞"
+  },
+  {
+    "name": "Pager",
+    "value": "📟"
+  },
+  {
+    "name": "Fax",
+    "value": "📠"
+  },
+  {
+    "name": "Battery",
+    "value": "🔋"
+  },
+  {
+    "name": "Electric",
+    "value": "🔌"
+  },
+  {
+    "name": "Laptop",
+    "value": "💻"
+  },
+  {
+    "name": "Desktop",
+    "value": "🖥️"
+  },
+  {
+    "name": "Printer",
+    "value": "🖨️"
+  },
+  {
+    "name": "Keyboard",
+    "value": "⌨️"
+  },
+  {
+    "name": "Computer",
+    "value": "🖱️"
+  },
+  {
+    "name": "Trackball",
+    "value": "🖲️"
+  },
+  {
+    "name": "Computer",
+    "value": "💽"
+  },
+  {
+    "name": "Floppy",
+    "value": "💾"
+  },
+  {
+    "name": "Optical",
+    "value": "💿"
+  },
+  {
+    "name": "DVD",
+    "value": "📀"
+  },
+  {
+    "name": "Abacus",
+    "value": "🧮"
+  },
+  {
+    "name": "Movie",
+    "value": "🎥"
+  },
+  {
+    "name": "Film",
+    "value": "🎞️"
+  },
+  {
+    "name": "Film",
+    "value": "📽️"
+  },
+  {
+    "name": "Television",
+    "value": "📺"
+  },
+  {
+    "name": "Camera",
+    "value": "📷"
+  },
+  {
+    "name": "Camera",
+    "value": "📸"
+  },
+  {
+    "name": "Video",
+    "value": "📹"
+  },
+  {
+    "name": "Videocassette",
+    "value": "📼"
+  },
+  {
+    "name": "Magnifying",
+    "value": "🔍"
+  },
+  {
+    "name": "Magnifying",
+    "value": "🔎"
+  },
+  {
+    "name": "Candle",
+    "value": "🕯️"
+  },
+  {
+    "name": "Light",
+    "value": "💡"
+  },
+  {
+    "name": "Flashlight",
+    "value": "🔦"
+  },
+  {
+    "name": "Red",
+    "value": "🏮"
+  },
+  {
+    "name": "Diya",
+    "value": "🪔"
+  },
+  {
+    "name": "Notebook",
+    "value": "📔"
+  },
+  {
+    "name": "Closed",
+    "value": "📕"
+  },
+  {
+    "name": "Open",
+    "value": "📖"
+  },
+  {
+    "name": "Green",
+    "value": "📗"
+  },
+  {
+    "name": "Blue",
+    "value": "📘"
+  },
+  {
+    "name": "Orange",
+    "value": "📙"
+  },
+  {
+    "name": "Books",
+    "value": "📚"
+  },
+  {
+    "name": "Notebook",
+    "value": "📓"
+  },
+  {
+    "name": "Ledger",
+    "value": "📒"
+  },
+  {
+    "name": "Page",
+    "value": "📃"
+  },
+  {
+    "name": "Scroll",
+    "value": "📜"
+  },
+  {
+    "name": "Page",
+    "value": "📄"
+  },
+  {
+    "name": "Newspaper",
+    "value": "📰"
+  },
+  {
+    "name": "Rolled-Up",
+    "value": "🗞️"
+  },
+  {
+    "name": "Bookmark",
+    "value": "📑"
+  },
+  {
+    "name": "Bookmark",
+    "value": "🔖"
+  },
+  {
+    "name": "Label",
+    "value": "🏷️"
+  },
+  {
+    "name": "Money",
+    "value": "💰"
+  },
+  {
+    "name": "Coin",
+    "value": "🪙"
+  },
+  {
+    "name": "Yen",
+    "value": "💴"
+  },
+  {
+    "name": "Dollar",
+    "value": "💵"
+  },
+  {
+    "name": "Euro",
+    "value": "💶"
+  },
+  {
+    "name": "Pound",
+    "value": "💷"
+  },
+  {
+    "name": "Money",
+    "value": "💸"
+  },
+  {
+    "name": "Credit",
+    "value": "💳"
+  },
+  {
+    "name": "Receipt",
+    "value": "🧾"
+  },
+  {
+    "name": "Envelope",
+    "value": "✉️"
+  },
+  {
+    "name": "E-Mail",
+    "value": "📧"
+  },
+  {
+    "name": "Incoming",
+    "value": "📨"
+  },
+  {
+    "name": "Envelope",
+    "value": "📩"
+  },
+  {
+    "name": "Outbox",
+    "value": "📤"
+  },
+  {
+    "name": "Inbox",
+    "value": "📥"
+  },
+  {
+    "name": "Package",
+    "value": "📦"
+  },
+  {
+    "name": "Closed",
+    "value": "📫"
+  },
+  {
+    "name": "Closed",
+    "value": "📪"
+  },
+  {
+    "name": "Open",
+    "value": "📬"
+  },
+  {
+    "name": "Open",
+    "value": "📭"
+  },
+  {
+    "name": "Postbox",
+    "value": "📮"
+  },
+  {
+    "name": "Ballot",
+    "value": "🗳️"
+  },
+  {
+    "name": "Pencil",
+    "value": "✏️"
+  },
+  {
+    "name": "Black",
+    "value": "✒️"
+  },
+  {
+    "name": "Fountain",
+    "value": "🖋️"
+  },
+  {
+    "name": "Pen",
+    "value": "🖊️"
+  },
+  {
+    "name": "Paintbrush",
+    "value": "🖌️"
+  },
+  {
+    "name": "Crayon",
+    "value": "🖍️"
+  },
+  {
+    "name": "Memo",
+    "value": "📝"
+  },
+  {
+    "name": "File",
+    "value": "📁"
+  },
+  {
+    "name": "Open",
+    "value": "📂"
+  },
+  {
+    "name": "Card",
+    "value": "🗂️"
+  },
+  {
+    "name": "Calendar",
+    "value": "📅"
+  },
+  {
+    "name": "Tear-Off",
+    "value": "📆"
+  },
+  {
+    "name": "Spiral",
+    "value": "🗒️"
+  },
+  {
+    "name": "Spiral",
+    "value": "🗓️"
+  },
+  {
+    "name": "Card",
+    "value": "📇"
+  },
+  {
+    "name": "Chart",
+    "value": "📈"
+  },
+  {
+    "name": "Chart",
+    "value": "📉"
+  },
+  {
+    "name": "Bar",
+    "value": "📊"
+  },
+  {
+    "name": "Clipboard",
+    "value": "📋"
+  },
+  {
+    "name": "Pushpin",
+    "value": "📌"
+  },
+  {
+    "name": "Round",
+    "value": "📍"
+  },
+  {
+    "name": "Paperclip",
+    "value": "📎"
+  },
+  {
+    "name": "Linked",
+    "value": "🖇️"
+  },
+  {
+    "name": "Straight",
+    "value": "📏"
+  },
+  {
+    "name": "Triangular",
+    "value": "📐"
+  },
+  {
+    "name": "Scissors",
+    "value": "✂️"
+  },
+  {
+    "name": "Card",
+    "value": "🗃️"
+  },
+  {
+    "name": "File",
+    "value": "🗄️"
+  },
+  {
+    "name": "Wastebasket",
+    "value": "🗑️"
+  },
+  {
+    "name": "Locked",
+    "value": "🔒"
+  },
+  {
+    "name": "Unlocked",
+    "value": "🔓"
+  },
+  {
+    "name": "Locked",
+    "value": "🔏"
+  },
+  {
+    "name": "Locked",
+    "value": "🔐"
+  },
+  {
+    "name": "Key",
+    "value": "🔑"
+  },
+  {
+    "name": "Old",
+    "value": "🗝️"
+  },
+  {
+    "name": "Hammer",
+    "value": "🔨"
+  },
+  {
+    "name": "Axe",
+    "value": "🪓"
+  },
+  {
+    "name": "Pick",
+    "value": "⛏️"
+  },
+  {
+    "name": "Hammer",
+    "value": "⚒️"
+  },
+  {
+    "name": "Hammer",
+    "value": "🛠️"
+  },
+  {
+    "name": "Dagger",
+    "value": "🗡️"
+  },
+  {
+    "name": "Crossed",
+    "value": "⚔️"
+  },
+  {
+    "name": "Water",
+    "value": "🔫"
+  },
+  {
+    "name": "Boomerang",
+    "value": "🪃"
+  },
+  {
+    "name": "Shield",
+    "value": "🛡️"
+  },
+  {
+    "name": "Carpentry",
+    "value": "🪚"
+  },
+  {
+    "name": "Wrench",
+    "value": "🔧"
+  },
+  {
+    "name": "Screwdriver",
+    "value": "🪛"
+  },
+  {
+    "name": "Nut",
+    "value": "🔩"
+  },
+  {
+    "name": "Gear",
+    "value": "⚙️"
+  },
+  {
+    "name": "Clamp",
+    "value": "🗜️"
+  },
+  {
+    "name": "Balance",
+    "value": "⚖️"
+  },
+  {
+    "name": "White",
+    "value": "🦯"
+  },
+  {
+    "name": "Link",
+    "value": "🔗"
+  },
+  {
+    "name": "Chains",
+    "value": "⛓️"
+  },
+  {
+    "name": "Hook",
+    "value": "🪝"
+  },
+  {
+    "name": "Toolbox",
+    "value": "🧰"
+  },
+  {
+    "name": "Magnet",
+    "value": "🧲"
+  },
+  {
+    "name": "Ladder",
+    "value": "🪜"
+  },
+  {
+    "name": "Alembic",
+    "value": "⚗️"
+  },
+  {
+    "name": "Test",
+    "value": "🧪"
+  },
+  {
+    "name": "Petri",
+    "value": "🧫"
+  },
+  {
+    "name": "DNA",
+    "value": "🧬"
+  },
+  {
+    "name": "Microscope",
+    "value": "🔬"
+  },
+  {
+    "name": "Telescope",
+    "value": "🔭"
+  },
+  {
+    "name": "Satellite",
+    "value": "📡"
+  },
+  {
+    "name": "Syringe",
+    "value": "💉"
+  },
+  {
+    "name": "Drop",
+    "value": "🩸"
+  },
+  {
+    "name": "Pill",
+    "value": "💊"
+  },
+  {
+    "name": "Adhesive",
+    "value": "🩹"
+  },
+  {
+    "name": "Crutch",
+    "value": "🩼"
+  },
+  {
+    "name": "Stethoscope",
+    "value": "🩺"
+  },
+  {
+    "name": "Door",
+    "value": "🚪"
+  },
+  {
+    "name": "Mirror",
+    "value": "🪞"
+  },
+  {
+    "name": "Window",
+    "value": "🪟"
+  },
+  {
+    "name": "Bed",
+    "value": "🛏️"
+  },
+  {
+    "name": "Couch",
+    "value": "🛋️"
+  },
+  {
+    "name": "Chair",
+    "value": "🪑"
+  },
+  {
+    "name": "Toilet",
+    "value": "🚽"
+  },
+  {
+    "name": "Plunger",
+    "value": "🪠"
+  },
+  {
+    "name": "Shower",
+    "value": "🚿"
+  },
+  {
+    "name": "Bathtub",
+    "value": "🛁"
+  },
+  {
+    "name": "Mouse",
+    "value": "🪤"
+  },
+  {
+    "name": "Razor",
+    "value": "🪒"
+  },
+  {
+    "name": "Lotion",
+    "value": "🧴"
+  },
+  {
+    "name": "Safety",
+    "value": "🧷"
+  },
+  {
+    "name": "Broom",
+    "value": "🧹"
+  },
+  {
+    "name": "Basket",
+    "value": "🧺"
+  },
+  {
+    "name": "Roll",
+    "value": "🧻"
+  },
+  {
+    "name": "Bucket",
+    "value": "🪣"
+  },
+  {
+    "name": "Soap",
+    "value": "🧼"
+  },
+  {
+    "name": "Toothbrush",
+    "value": "🪥"
+  },
+  {
+    "name": "Sponge",
+    "value": "🧽"
+  },
+  {
+    "name": "Fire",
+    "value": "🧯"
+  },
+  {
+    "name": "Shopping",
+    "value": "🛒"
+  },
+  {
+    "name": "Cigarette",
+    "value": "🚬"
+  },
+  {
+    "name": "Coffin",
+    "value": "⚰️"
+  },
+  {
+    "name": "Headstone",
+    "value": "🪦"
+  },
+  {
+    "name": "Funeral",
+    "value": "⚱️"
+  },
+  {
+    "name": "Moai",
+    "value": "🗿"
+  },
+  {
+    "name": "Placard",
+    "value": "🪧"
+  },
+  {
+    "name": "Identification",
+    "value": "🪪"
+  },
+  {
+    "name": "Potable",
+    "value": "🚰"
+  }
+]

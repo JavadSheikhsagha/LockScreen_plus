@@ -1,0 +1,72 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "3901f0c8ad92954de3da76d10484e78a",
+    "entities": [
+      {
+        "tableName": "lockscreen_data",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `color` TEXT NOT NULL, `font` INTEGER NOT NULL, `imageBack` TEXT NOT NULL, `imageFront` TEXT NOT NULL, `bottomWidgets` TEXT NOT NULL DEFAULT '0', `topWidget` TEXT NOT NULL DEFAULT 'Date', PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "color",
+            "columnName": "color",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "font",
+            "columnName": "font",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageBack",
+            "columnName": "imageBack",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageFront",
+            "columnName": "imageFront",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bottomWidgets",
+            "columnName": "bottomWidgets",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'0'"
+          },
+          {
+            "fieldPath": "topWidget",
+            "columnName": "topWidget",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'Date'"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '3901f0c8ad92954de3da76d10484e78a')"
+    ]
+  }
+}

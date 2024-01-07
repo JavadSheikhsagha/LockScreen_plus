@@ -1,0 +1,90 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "d8519bbfc6bd569663e9e4c525493f0e",
+    "entities": [
+      {
+        "tableName": "lockscreen_data",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `color` TEXT NOT NULL, `font` INTEGER NOT NULL, `imageBack` TEXT NOT NULL, `imageFront` TEXT NOT NULL, `bottomWidgets` TEXT NOT NULL DEFAULT '0', `topWidget` TEXT NOT NULL DEFAULT 'Date', `isEmoje` INTEGER NOT NULL, `emoji` BLOB NOT NULL, `backColor` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "color",
+            "columnName": "color",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "font",
+            "columnName": "font",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageBack",
+            "columnName": "imageBack",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageFront",
+            "columnName": "imageFront",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bottomWidgets",
+            "columnName": "bottomWidgets",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'0'"
+          },
+          {
+            "fieldPath": "topWidget",
+            "columnName": "topWidget",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'Date'"
+          },
+          {
+            "fieldPath": "isEmoje",
+            "columnName": "isEmoje",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "emoji",
+            "columnName": "emoji",
+            "affinity": "BLOB",
+            "notNull": true
+          },
+          {
+            "fieldPath": "backColor",
+            "columnName": "backColor",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'd8519bbfc6bd569663e9e4c525493f0e')"
+    ]
+  }
+}

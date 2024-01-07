@@ -1,0 +1,1082 @@
+[
+  {
+    "name": "Chequered",
+    "value": "🏁"
+  },
+  {
+    "name": "Triangular",
+    "value": "🚩"
+  },
+  {
+    "name": "Crossed",
+    "value": "🎌"
+  },
+  {
+    "name": "Black",
+    "value": "🏴"
+  },
+  {
+    "name": "White",
+    "value": "🏳️"
+  },
+  {
+    "name": "Rainbow",
+    "value": "🏳️‍🌈"
+  },
+  {
+    "name": "Transgender",
+    "value": "🏳️‍⚧️"
+  },
+  {
+    "name": "Pirate",
+    "value": "🏴‍☠️"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇨"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇩"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇫"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇮"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇱"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇶"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇺"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇼"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇽"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇦🇿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇧"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇩"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇫"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇭"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇮"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇯"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇱"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇶"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇻"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇼"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇾"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇧🇿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇨"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇩"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇫"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇭"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇮"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇰"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇱"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇵"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇺"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇻"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇼"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇽"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇾"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇨🇿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇩🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇩🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇩🇯"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇩🇰"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇩🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇩🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇩🇿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇪🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇪🇨"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇪🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇪🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇪🇭"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇪🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇪🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇪🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇪🇺"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇫🇮"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇫🇯"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇫🇰"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇫🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇫🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇫🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇧"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇩"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇫"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇭"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇮"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇱"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇵"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇶"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇺"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇼"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇬🇾"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇭🇰"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇭🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇭🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇭🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇭🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇭🇺"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇮🇨"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇮🇩"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇮🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇮🇱"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇮🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇮🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇮🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇮🇶"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇮🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇮🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇮🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇯🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇯🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇯🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇯🇵"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇰🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇰🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇰🇭"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇰🇮"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇰🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇰🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇰🇵"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇰🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇰🇼"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇰🇾"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇰🇿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇱🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇱🇧"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇱🇨"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇱🇮"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇱🇰"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇱🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇱🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇱🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇱🇺"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇱🇻"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇱🇾"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇨"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇩"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇫"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇭"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇰"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇱"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇵"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇶"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇺"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇻"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇼"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇽"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇾"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇲🇿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇨"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇫"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇮"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇱"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇵"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇺"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇳🇿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇴🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇫"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇭"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇰"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇱"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇼"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇵🇾"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇶🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇷🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇷🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇷🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇷🇺"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇷🇼"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇧"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇨"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇩"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇭"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇮"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇯"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇰"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇱"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇻"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇽"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇾"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇸🇿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇨"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇩"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇫"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇭"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇯"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇰"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇱"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇴"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇷"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇻"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇼"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇹🇿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇺🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇺🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇺🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇺🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇺🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇺🇾"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇺🇿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇻🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇻🇨"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇻🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇻🇬"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇻🇮"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇻🇳"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇻🇺"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇼🇫"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇼🇸"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇽🇰"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇾🇪"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇾🇹"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇿🇦"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇿🇲"
+  },
+  {
+    "name": "Flag:",
+    "value": "🇿🇼"
+  },
+  {
+    "name": "Flag:",
+    "value": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+  },
+  {
+    "name": "Flag:",
+    "value": "🏴󠁧󠁢󠁷󠁬󠁳󠁿"
+  },
+  {
+    "name": "Flag",
+    "value": "🏴󠁵󠁳󠁴󠁸󠁿"
+  }
+]

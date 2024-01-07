@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F6"
+    tools:context=".Notification.NotificationActivity">
+
+    <TextView
+        android:id="@+id/text_top_notifoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Notifications"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:reflectionColor="#E8E8E8" />
+
+
+    <LinearLayout
+        android:id="@+id/notification_back_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/text_top_notifoo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_top_notifoo">
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:rotation="180"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_arrow"
+            app:tint="#007AFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="Back"
+            android:textColor="#007AFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/notif_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_top_notifoo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:layout_marginLeft="22dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="Allow Notifications"
+                android:textColor="#353838"
+                android:textSize="18sp" />
+
+
+            <io.github.vejei.cupertinoswitch.CupertinoSwitch
+                android:id="@+id/switch_notif_on_or_of"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                app:trackOffColor="#D9D9D9"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                app:trackOnColor="#65C466"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notif_other_settting_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notif_card">
+
+        <TextView
+            android:id="@+id/displayas_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="DISPLAY AS"
+            android:textColor="#7F7F7F"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/display_card_notifpage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="6dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/displayas_tv">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="60dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/count_notif_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginVertical="24dp"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/count_notif_iv"
+                        android:layout_width="32dp"
+                        android:layout_height="72dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_count_on"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/count_notif_cv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/background_notif_selected"
+                        >
+
+                        <TextView
+                            android:id="@+id/count_notif_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Count"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginHorizontal="6dp"
+                            android:textSize="12sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/list_notif_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginVertical="24dp"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/list_notif_iv"
+                        android:layout_width="32dp"
+                        android:layout_height="72dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_list_off"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/list_notif_cv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/background_notif_unselected"
+                        >
+
+                        <TextView
+                            android:id="@+id/list_notif_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="List"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="10dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:textColor="#353838"
+                            android:textSize="12sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/cd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="Choose the default for how notifications appear."
+            android:textColor="#7F7F7F"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/display_card_notifpage" />
+
+        <TextView
+            android:id="@+id/lsa_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="Lock Screen Appearance"
+            android:textColor="#7F7F7F"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cd_tv" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/show_notif_content_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="6dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lsa_tv">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.romainpiel.shimmer.ShimmerTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="16dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="Show Content"
+                    android:textColor="#353838"
+                    android:textSize="18sp" />
+
+
+                <io.github.vejei.cupertinoswitch.CupertinoSwitch
+                    android:id="@+id/show_content_notif_on_or_of"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    app:trackOffColor="#D9D9D9"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    app:trackOnColor="#65C466"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="Show the content of notifications on the lock screen."
+            android:textColor="#7F7F7F"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/show_notif_content_card" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

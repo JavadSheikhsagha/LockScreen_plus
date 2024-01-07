@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".LockScreen.LockScreenActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        android:id="@+id/viewPagerSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:transitionName="driveitgototow"
+        android:paddingVertical="0dp"
+        android:paddingHorizontal="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/image_back_lockscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:id="@+id/image_emoji_lockscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/top_widget_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="58dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <TextView
+                    android:id="@+id/top_widget_tv_main_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginVertical="4dp"
+                    android:fontFamily="@font/sf_pro_text_medium"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:textSize="22sp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clock_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/top_widget_ll">
+
+                <TextView
+                    android:id="@+id/clock_tv_ls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="22:28"
+                    android:textColor="@color/white"
+                    android:textSize="90sp" />
+
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/image_front_lockscreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                />
+
+            <LinearLayout
+                android:id="@+id/widgets_ll_main_lock"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_marginHorizontal="24dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/clock_ll">
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/swap_iv"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <LinearLayout
+                android:id="@+id/notification_count_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="16dp"
+                android:paddingHorizontal="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/swap_iv"
+                app:layout_constraintEnd_toStartOf="@+id/camera_cv"
+                app:layout_constraintStart_toEndOf="@+id/flashlight_cv"
+                app:layout_constraintTop_toTopOf="@+id/flashlight_cv">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp" />
+
+                <TextView
+                    android:id="@+id/notification_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="5 Notifications"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.motion.widget.MotionLayout
+                android:id="@+id/container_motion_ls_rv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/notification_count_ll"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/widgets_ll_main_lock"
+                app:layoutDescription="@xml/activity_lock_screen_scene"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/container_notif_rv_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="vertical"
+                    android:alpha="0.4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="Notification Centre"
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/showless_cv"
+                            app:layout_constraintStart_toStartOf="@+id/card_notification_father"
+                            app:layout_constraintTop_toTopOf="@+id/showless_cv" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/clear_all_cv_all"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginRight="16dp"
+                            android:backgroundTint="#80F2F2F2"
+                            android:visibility="visible"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="0dp"
+                            app:layout_constraintEnd_toEndOf="@+id/card_notification_father"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/icon_cross" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="12dp"
+                                android:text="Clear"
+                                android:textColor="#565656"
+                                android:textSize="12sp"
+                                android:visibility="gone" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/notif_rv_main_lock"
+                        android:overScrollMode="never"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.motion.widget.MotionLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/camera_cv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="52dp"
+                android:alpha=".3"
+                android:background="@color/white"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/icon_camera"
+                android:layout_margin="22dp"
+                app:layout_constraintStart_toStartOf="@+id/camera_cv"
+                app:layout_constraintEnd_toEndOf="@+id/camera_cv"
+                app:layout_constraintBottom_toBottomOf="@+id/camera_cv"
+                app:layout_constraintTop_toTopOf="@+id/camera_cv"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/flashlight_cv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="52dp"
+                android:alpha=".3"
+                android:background="@color/white"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="22dp"
+                android:src="@drawable/icon_flashlight"
+                app:layout_constraintStart_toStartOf="@+id/flashlight_cv"
+                app:layout_constraintEnd_toEndOf="@+id/flashlight_cv"
+                app:layout_constraintBottom_toBottomOf="@+id/flashlight_cv"
+                app:layout_constraintTop_toTopOf="@+id/flashlight_cv"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginBottom="34dp"
+        android:background="@color/white"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
