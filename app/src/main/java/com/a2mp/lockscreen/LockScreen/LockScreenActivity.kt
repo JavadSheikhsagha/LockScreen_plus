@@ -90,6 +90,7 @@ class LockScreenActivity : AppCompatActivity() {
         InterstitialAd.load(
             this,
             "ca-app-pub-6545436330357450/2407148865",
+            // TODO: CHANGE THIS CODE!!!
             adRequest,
             object : InterstitialAdLoadCallback() {
                 override fun onAdFailedToLoad(adError: LoadAdError) {

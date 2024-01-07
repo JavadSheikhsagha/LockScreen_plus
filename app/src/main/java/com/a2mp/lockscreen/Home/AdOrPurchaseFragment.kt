@@ -82,7 +82,7 @@ class AdOrPurchaseFragment(var title : String,var count: Int, var onAdsWatched: 
                 1 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-6545436330357450/6718265989",
+                        "ca-app-pub-5541510796756413/7217755249",
                         adRequestWidget1,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {
@@ -118,7 +118,7 @@ class AdOrPurchaseFragment(var title : String,var count: Int, var onAdsWatched: 
                 2 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-6545436330357450/6718265989",
+                        "ca-app-pub-5541510796756413/7217755249",
                         adRequestWidget2,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {
@@ -154,7 +154,7 @@ class AdOrPurchaseFragment(var title : String,var count: Int, var onAdsWatched: 
                 3 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-6545436330357450/6718265989",
+                        "ca-app-pub-5541510796756413/7217755249",
                         adRequestWidget3,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {
@@ -187,7 +187,7 @@ class AdOrPurchaseFragment(var title : String,var count: Int, var onAdsWatched: 
                 4 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-6545436330357450/3091680468",
+                        "ca-app-pub-5541510796756413/7217755249",
                         adRequestNotif,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {

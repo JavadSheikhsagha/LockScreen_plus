@@ -95,7 +95,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6545436330357450~5371141989" />
+            android:value="ca-app-pub-5541510796756413~3739080203" />
 
         <receiver android:name=".Notification.BootReceiver"
             android:enabled="true"

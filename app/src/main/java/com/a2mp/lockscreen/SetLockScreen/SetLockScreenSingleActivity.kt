@@ -295,7 +295,7 @@ class SetLockScreenSingleActivity : AppCompatActivity() {
 
                 RewardedAd.load(
                     this,
-                    "ca-app-pub-6545436330357450/6301080277",
+                    "ca-app-pub-5541510796756413/7217755249",
                     adRequest,
                     object : RewardedAdLoadCallback() {
                         override fun onAdFailedToLoad(adError: LoadAdError) {

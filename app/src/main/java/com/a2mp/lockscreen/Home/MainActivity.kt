@@ -179,6 +179,7 @@ class MainActivity : AppCompatActivity() {
         InterstitialAd.load(
             this,
             "ca-app-pub-6545436330357450/2407148865",
+            // TODO: CHANGE!!!
             adRequest,
             object : InterstitialAdLoadCallback() {
                 override fun onAdFailedToLoad(adError: LoadAdError) {

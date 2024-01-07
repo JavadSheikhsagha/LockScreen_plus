@@ -73,7 +73,7 @@ class AdOrPurchaseEmojiFragment (var title : String , var count: Int) : DialogFr
                 1 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-6545436330357450/3137035627",
+                        "ca-app-pub-5541510796756413/7217755249",
                         adRequestEmoji1,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {
@@ -103,7 +103,7 @@ class AdOrPurchaseEmojiFragment (var title : String , var count: Int) : DialogFr
                 2 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-6545436330357450/3137035627",
+                        "ca-app-pub-5541510796756413/7217755249",
                         adRequestEmoji2,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {
