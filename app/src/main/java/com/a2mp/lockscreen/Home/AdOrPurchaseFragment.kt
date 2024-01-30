@@ -82,10 +82,11 @@ class AdOrPurchaseFragment(var title : String,var count: Int, var onAdsWatched: 
                 1 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-5541510796756413/7217755249",
+                        REWARDED_AD_3,
                         adRequestWidget1,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {
+                                Log.i("LOG23", "onAdFailedToLoad: ${adError.message}")
 
                                 mRewardedAdWidget1 = null
                             }
@@ -118,10 +119,11 @@ class AdOrPurchaseFragment(var title : String,var count: Int, var onAdsWatched: 
                 2 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-5541510796756413/7217755249",
+                        REWARDED_AD_3,
                         adRequestWidget2,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {
+                                Log.i("LOG23", "onAdFailedToLoad: ${adError.message}")
 
                                 mRewardedAdWidget2 = null
                             }
@@ -154,10 +156,11 @@ class AdOrPurchaseFragment(var title : String,var count: Int, var onAdsWatched: 
                 3 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-5541510796756413/7217755249",
+                        REWARDED_AD_1,
                         adRequestWidget3,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {
+                                Log.i("LOG23", "onAdFailedToLoad: ${adError.message}")
 
                                 mRewardedAdWidget3 = null
                             }
@@ -187,10 +190,11 @@ class AdOrPurchaseFragment(var title : String,var count: Int, var onAdsWatched: 
                 4 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-5541510796756413/7217755249",
+                        REWARDED_AD_2,
                         adRequestNotif,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {
+                                Log.i("LOG23", "onAdFailedToLoad: ${adError.message}")
 
                                 mRewardedAdNotif = null
                             }

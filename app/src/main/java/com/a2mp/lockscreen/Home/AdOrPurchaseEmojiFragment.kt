@@ -15,6 +15,16 @@ import com.google.android.gms.ads.rewarded.RewardItem
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
 
+val REWARDED_AD_1 = "ca-app-pub-5541510796756413/7122868976"
+//val REWARDED_AD_1 = "ca-app-pub-3940256099942544/5224354917"
+val REWARDED_AD_2 = "ca-app-pub-5541510796756413/8683308758"
+//val REWARDED_AD_2 = "ca-app-pub-3940256099942544/5224354917"
+val REWARDED_AD_3 = "ca-app-pub-5541510796756413/9557460625"
+//val REWARDED_AD_3 = "ca-app-pub-3940256099942544/5224354917"
+
+
+val TEST_REWARDED_AD = "ca-app-pub-3940256099942544/5224354917"
+
 class AdOrPurchaseEmojiFragment (var title : String , var count: Int) : DialogFragment() {
 
     lateinit var binding: FragmentAdOrPurchaseBinding
@@ -73,10 +83,11 @@ class AdOrPurchaseEmojiFragment (var title : String , var count: Int) : DialogFr
                 1 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-5541510796756413/7217755249",
+                        REWARDED_AD_1,
                         adRequestEmoji1,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {
+                                Log.i("LOG23", "onAdFailedToLoad: ${adError.message}")
 
                                 mRewardedEmoji1 = null
                             }
@@ -103,10 +114,11 @@ class AdOrPurchaseEmojiFragment (var title : String , var count: Int) : DialogFr
                 2 -> {
                     RewardedAd.load(
                         requireActivity(),
-                        "ca-app-pub-5541510796756413/7217755249",
+                        REWARDED_AD_1,
                         adRequestEmoji2,
                         object : RewardedAdLoadCallback() {
                             override fun onAdFailedToLoad(adError: LoadAdError) {
+                                Log.i("LOG23", "onAdFailedToLoad: ${adError.message}")
 
                                 mRewardedEmoji2 = null
                             }

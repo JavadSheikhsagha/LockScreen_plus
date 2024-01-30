@@ -33,6 +33,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.a2mp.lockscreen.Api.ViewModel.MainViewModel
 import com.a2mp.lockscreen.Database.LockScreen
 import com.a2mp.lockscreen.Database.LockScreenViewModel
+import com.a2mp.lockscreen.Home.REWARDED_AD_2
 import com.a2mp.lockscreen.Notification.*
 import com.a2mp.lockscreen.R
 import com.a2mp.lockscreen.Widgets.WidgetsDataModel
@@ -89,11 +90,12 @@ class LockScreenActivity : AppCompatActivity() {
 
         InterstitialAd.load(
             this,
-            "ca-app-pub-6545436330357450/2407148865",
+            "ca-app-pub-5541510796756413/2836139603",
             // TODO: CHANGE THIS CODE!!!
             adRequest,
             object : InterstitialAdLoadCallback() {
                 override fun onAdFailedToLoad(adError: LoadAdError) {
+                    Log.i("LOG23", "onAdFailedToLoad: ${adError.message}")
 
                     mInterstitialAd = null
                 }

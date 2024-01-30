@@ -1,8 +1,6 @@
 package com.a2mp.lockscreen.SetLockScreen
 
-import android.content.Intent
 import android.graphics.Bitmap
-import android.graphics.Canvas
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
@@ -24,10 +22,16 @@ import com.a2mp.lockscreen.Database.LockScreen
 import com.a2mp.lockscreen.Database.LockScreenViewModel
 import com.a2mp.lockscreen.Home.AdOrPurchaseAddLockScreenFragment
 import com.a2mp.lockscreen.Home.AdOrPurchaseFragment
-import com.a2mp.lockscreen.Home.PurchaseActivity
+import com.a2mp.lockscreen.Home.REWARDED_AD_2
 import com.a2mp.lockscreen.LockScreen.MainLockScreenData
 import com.a2mp.lockscreen.R
-import com.a2mp.lockscreen.Widgets.*
+import com.a2mp.lockscreen.Widgets.SetWidgetsBottomFragment
+import com.a2mp.lockscreen.Widgets.SetWidgetsTopFragment
+import com.a2mp.lockscreen.Widgets.TopWidgetItems
+import com.a2mp.lockscreen.Widgets.WidgetIsFullFragment
+import com.a2mp.lockscreen.Widgets.WidgetModel
+import com.a2mp.lockscreen.Widgets.WidgetsDataModel
+import com.a2mp.lockscreen.Widgets.WidgetsUtility
 import com.a2mp.lockscreen.databinding.ActivitySetLockScreenBinding
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
@@ -35,7 +39,11 @@ import com.google.android.gms.ads.rewarded.RewardItem
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
 import com.google.firebase.analytics.FirebaseAnalytics
-import com.tonyodev.fetch2.*
+import com.tonyodev.fetch2.Fetch
+import com.tonyodev.fetch2.FetchConfiguration
+import com.tonyodev.fetch2.NetworkType
+import com.tonyodev.fetch2.Priority
+import com.tonyodev.fetch2.Request
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -44,8 +52,8 @@ import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import java.io.ByteArrayOutputStream
 import java.text.SimpleDateFormat
-import java.util.*
-import kotlin.Error
+import java.util.Calendar
+import java.util.Date
 
 class SetLockScreenSingleActivity : AppCompatActivity() {
 
@@ -111,7 +119,7 @@ class SetLockScreenSingleActivity : AppCompatActivity() {
 
             try {
                 binding.imageBackooS.drawToBitmap().compress(Bitmap.CompressFormat.JPEG, 100, baos)
-            }catch (e:Exception){
+            } catch (e: Exception) {
 
             }
             val imageBytes: ByteArray = baos.toByteArray()
@@ -278,118 +286,123 @@ class SetLockScreenSingleActivity : AppCompatActivity() {
         }
 
         binding.addCvS.setOnClickListener {
-
-
-
+            Log.i("LOG24", "onCreate: onaddClick")
 
             if (MainLockScreenData.getPurchase(this) != "Active") {
+                Log.i("LOG24", "onCreate: isnot active")
 
-            adOrPurchaseAddLockScreenFragment = AdOrPurchaseAddLockScreenFragment("Add Lockscreen" , 1){
-
-
-                binding.gifImageView22.visibility = View.VISIBLE
-                binding.gifImageView22.repeatCount = 280
-                binding.gifImageView22.playAnimation()
-
-                binding.dimBackk.visibility = View.VISIBLE
-
-                RewardedAd.load(
-                    this,
-                    "ca-app-pub-5541510796756413/7217755249",
-                    adRequest,
-                    object : RewardedAdLoadCallback() {
-                        override fun onAdFailedToLoad(adError: LoadAdError) {
-
-                            mRewardedAd = null
-                        }
-
-                        override fun onAdLoaded(rewardedAd: RewardedAd) {
-
-                            mRewardedAd = rewardedAd
-
-                            mRewardedAd?.show(this@SetLockScreenSingleActivity) {
-
-                                fun onUserEarnedReward(rewardItem: RewardItem) {
-
-                                    Toast.makeText(
-                                        this@SetLockScreenSingleActivity,
-                                        "lock screen add successfully",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
-
-                                    val filooo =
-                                        "/storage/emulated/0/Android/data/com.a2mp.lockscreen/files/Lockscreen" + System.currentTimeMillis() + ".png"
-
-                                    val request = Request(it.toString(), filooo)
-                                    request.priority = (Priority.HIGH)
-                                    request.networkType = (NetworkType.ALL)
+                adOrPurchaseAddLockScreenFragment =
+                    AdOrPurchaseAddLockScreenFragment("Add Lockscreen", 1) {
 
 
-                                    fetch!!.enqueue(request,
-                                        { updatedRequest: Request? ->
+                        binding.gifImageView22.visibility = View.VISIBLE
+                        binding.gifImageView22.repeatCount = 280
+                        binding.gifImageView22.playAnimation()
 
-                                        },
-                                        { error: com.tonyodev.fetch2.Error ->
+                        binding.dimBackk.visibility = View.VISIBLE
 
-                                        })
+                        RewardedAd.load(
+                            this,
+                            REWARDED_AD_2,
+                            adRequest,
+                            object : RewardedAdLoadCallback() {
+                                override fun onAdFailedToLoad(adError: LoadAdError) {
+                                    Log.i("LOG23", "onAdFailedToLoad: ${adError.message}")
 
-                                    var mutableListString = mutableListOf<String>()
-                                    for (widget in widgetSelected) {
-                                        mutableListString.add(widget.name)
-                                    }
-                                    var sctm = System.currentTimeMillis()
-                                    mLockScreenViewModel.addLockscreen(
-                                        LockScreen(
-                                            sctm,
-                                            colorSelected!!,
-                                            fontSelected!!,
-                                            uri!!,
-                                            urlRemBG,
-                                            mutableListString,
-                                            topWidget.subtitle,
-                                            false,
-                                            ByteArray(0),
-                                            "#666666"
-                                        )
-                                    )
-                                    MainLockScreenData.setSP(
-                                        this@SetLockScreenSingleActivity, LockScreen(
-                                            sctm,
-                                            colorSelected!!,
-                                            fontSelected!!,
-                                            uri!!,
-                                            urlRemBG,
-                                            mutableListString,
-                                            topWidget.subtitle,
-                                            false,
-                                            ByteArray(0),
-                                            "#666666"
-                                        )
-                                    )
-                                    MainLockScreenData.setLSRDEmpty(this@SetLockScreenSingleActivity , false)
-                                    finish()
-
-
+                                    mRewardedAd = null
                                 }
-                                Log.i("oaksdoaksd", "onViewCreated: log karddddddddddd")
-                                onUserEarnedReward(it)
+
+                                override fun onAdLoaded(rewardedAd: RewardedAd) {
+
+                                    mRewardedAd = rewardedAd
+
+                                    mRewardedAd?.show(this@SetLockScreenSingleActivity) {
+
+                                        fun onUserEarnedReward(rewardItem: RewardItem) {
+
+                                            Toast.makeText(
+                                                this@SetLockScreenSingleActivity,
+                                                "lock screen add successfully",
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+
+                                            val filooo =
+                                                "/storage/emulated/0/Android/data/com.a2mp.lockscreen/files/Lockscreen" + System.currentTimeMillis() + ".png"
+
+                                            val request = Request(it.toString(), filooo)
+                                            request.priority = (Priority.HIGH)
+                                            request.networkType = (NetworkType.ALL)
 
 
-                            }
-                            binding.gifImageView22.visibility = View.INVISIBLE
-                            binding.dimBackk.visibility = View.INVISIBLE
-                        }
+                                            fetch!!.enqueue(request,
+                                                { updatedRequest: Request? ->
+
+                                                },
+                                                { error: com.tonyodev.fetch2.Error ->
+
+                                                })
+
+                                            var mutableListString = mutableListOf<String>()
+                                            for (widget in widgetSelected) {
+                                                mutableListString.add(widget.name)
+                                            }
+                                            var sctm = System.currentTimeMillis()
+                                            mLockScreenViewModel.addLockscreen(
+                                                LockScreen(
+                                                    sctm,
+                                                    colorSelected!!,
+                                                    fontSelected!!,
+                                                    uri!!,
+                                                    urlRemBG,
+                                                    mutableListString,
+                                                    topWidget.subtitle,
+                                                    false,
+                                                    ByteArray(0),
+                                                    "#666666"
+                                                )
+                                            )
+                                            MainLockScreenData.setSP(
+                                                this@SetLockScreenSingleActivity, LockScreen(
+                                                    sctm,
+                                                    colorSelected!!,
+                                                    fontSelected!!,
+                                                    uri!!,
+                                                    urlRemBG,
+                                                    mutableListString,
+                                                    topWidget.subtitle,
+                                                    false,
+                                                    ByteArray(0),
+                                                    "#666666"
+                                                )
+                                            )
+                                            MainLockScreenData.setLSRDEmpty(
+                                                this@SetLockScreenSingleActivity,
+                                                false
+                                            )
+                                            finish()
 
 
-                    })
+                                        }
+                                        Log.i("oaksdoaksd", "onViewCreated: log karddddddddddd")
+                                        onUserEarnedReward(it)
 
 
-            }
+                                    }
+                                    binding.gifImageView22.visibility = View.INVISIBLE
+                                    binding.dimBackk.visibility = View.INVISIBLE
+                                }
 
 
+                            })
 
+
+                    }
+
+
+                adOrPurchaseAddLockScreenFragment.show(supportFragmentManager, null)
 
             } else {
+                Log.i("LOG24", "onCreate: toast")
 
                 Toast.makeText(
                     this@SetLockScreenSingleActivity,
@@ -446,7 +459,7 @@ class SetLockScreenSingleActivity : AppCompatActivity() {
                         "#666666"
                     )
                 )
-                MainLockScreenData.setLSRDEmpty(this@SetLockScreenSingleActivity , false)
+                MainLockScreenData.setLSRDEmpty(this@SetLockScreenSingleActivity, false)
                 finish()
 
 
@@ -471,7 +484,7 @@ class SetLockScreenSingleActivity : AppCompatActivity() {
         setWidgetsBttomFragment.isCancelable = false
         editBottomFragment.isCancelable = false
 
-        adOrPurchaseFragment = AdOrPurchaseFragment("Add Widgets",1) {
+        adOrPurchaseFragment = AdOrPurchaseFragment("Add Widgets", 1) {
 
             flagHasSeen3Ad = "yesoooo"
 
@@ -559,7 +572,7 @@ class SetLockScreenSingleActivity : AppCompatActivity() {
 
     fun setButtonInvisible() {
         binding.cancelCvS.visibility = View.INVISIBLE
-        binding.addCvS.visibility = View.INVISIBLE
+//        binding.addCvS.visibility = View.INVISIBLE
     }
 
     fun setButtonVisible() {

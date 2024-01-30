@@ -34,6 +34,7 @@ import com.a2mp.lockscreen.Database.LockScreen
 import com.a2mp.lockscreen.Database.LockScreenViewModel
 import com.a2mp.lockscreen.Home.AdOrPurchaseFragment
 import com.a2mp.lockscreen.Home.PurchaseActivity
+import com.a2mp.lockscreen.Home.REWARDED_AD_3
 import com.a2mp.lockscreen.LockScreen.MainLockScreenData
 import com.a2mp.lockscreen.MyScreens.SliderAdapter
 import com.a2mp.lockscreen.R
@@ -297,10 +298,11 @@ class EmojiActivity : AppCompatActivity() {
 
                 RewardedAd.load(
                     this,
-                    "ca-app-pub-5541510796756413/7217755249",
+                    REWARDED_AD_3,
                     adRequest,
                     object : RewardedAdLoadCallback() {
                         override fun onAdFailedToLoad(adError: LoadAdError) {
+                            Log.i("LOG23", "onAdFailedToLoad: ${adError.message}")
 
                             mRewardedAd = null
                         }

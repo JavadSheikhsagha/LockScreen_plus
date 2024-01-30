@@ -24,6 +24,7 @@ import com.a2mp.lockscreen.Database.LockScreenViewModel
 import com.a2mp.lockscreen.Home.AdOrPurchaseAddLockScreenFragment
 import com.a2mp.lockscreen.Home.AdOrPurchaseFragment
 import com.a2mp.lockscreen.Home.PurchaseActivity
+import com.a2mp.lockscreen.Home.REWARDED_AD_1
 import com.a2mp.lockscreen.LockScreen.MainLockScreenData
 import com.a2mp.lockscreen.Notification.NotificationActivity
 import com.a2mp.lockscreen.R
@@ -296,94 +297,99 @@ class SetLockScreenMultipleActivity : AppCompatActivity() {
         binding.addCv.setOnClickListener {
 
             try {
-
+                Log.i("LOG25", "onCreate:  tap add")
                 if (MainLockScreenData.getPurchase(this) != "Active") {
+                    Log.i("LOG25", "onCreate:  is not active")
+//                    MainLockScreenData.setPurchase(this, "Active")
 
-            adOrPurchaseAddLockScreenFragment = AdOrPurchaseAddLockScreenFragment("Add Lockscreen" , 1){
+                    adOrPurchaseAddLockScreenFragment =
+                        AdOrPurchaseAddLockScreenFragment("Add Lockscreen", 1) {
 
-                binding.gifImageView2.visibility = View.VISIBLE
-                binding.gifImageView2.repeatCount = 280
-                binding.gifImageView2.playAnimation()
+                            binding.gifImageView2.visibility = View.VISIBLE
+                            binding.gifImageView2.repeatCount = 280
+                            binding.gifImageView2.playAnimation()
 
-                binding.dimBack.visibility = View.VISIBLE
+                            binding.dimBack.visibility = View.VISIBLE
 
-                RewardedAd.load(
-                    this,
-                    "ca-app-pub-5541510796756413/7217755249",
-                    adRequest,
-                    object : RewardedAdLoadCallback() {
-                        override fun onAdFailedToLoad(adError: LoadAdError) {
-
-                            mRewardedAd = null
-                        }
-
-                        override fun onAdLoaded(rewardedAd: RewardedAd) {
-
-                            mRewardedAd = rewardedAd
-
-                            mRewardedAd?.show(this@SetLockScreenMultipleActivity) {
-
-                                fun onUserEarnedReward(rewardItem: RewardItem) {
-                                    Toast.makeText(
-                                        this@SetLockScreenMultipleActivity,
-                                        "lock screen add successfully",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
-
-                                    var mutableListString = mutableListOf<String>()
-                                    for (widget in widgetSelected) {
-                                        mutableListString.add(widget.name)
+                            RewardedAd.load(
+                                this,
+                                REWARDED_AD_1,
+                                adRequest,
+                                object : RewardedAdLoadCallback() {
+                                    override fun onAdFailedToLoad(adError: LoadAdError) {
+                                        Log.i("LOG25", "onAdFailedToLoad: ${adError.message}")
+                                        mRewardedAd = null
                                     }
-                                    var sctm = System.currentTimeMillis()
-                                    mLockScreenViewModel.addLockscreen(
-                                        LockScreen(
-                                            sctm,
-                                            colorSelected!!,
-                                            fontSelected!!,
-                                            listPictures[viewPager2.currentItem].picName,
-                                            listPictures[viewPager2.currentItem].remBgPicName,
-                                            mutableListString,
-                                            topWidget.subtitle,
-                                            false,
-                                            ByteArray(0),
-                                            ""
-                                        )
-                                    )
-                                    Log.i(
-                                        "asflanfliafpiqwf",
-                                        "onCreate: 111111111111111111111111111111111111111111"
-                                    )
-                                    MainLockScreenData.setSP(
-                                        this@SetLockScreenMultipleActivity, LockScreen(
-                                            sctm,
-                                            colorSelected!!,
-                                            fontSelected!!,
-                                            listPictures[viewPager2.currentItem].picName,
-                                            listPictures[viewPager2.currentItem].remBgPicName,
-                                            mutableListString,
-                                            topWidget.subtitle,
-                                            false,
-                                            ByteArray(0),
-                                            ""
-                                        )
-                                    )
-                                    MainLockScreenData.setLSRDEmpty(this@SetLockScreenMultipleActivity , false)
-                                    finish()
-                                }
-                                Log.i("oaksdoaksd", "onViewCreated: log karddddddddddd")
-                                onUserEarnedReward(it)
 
-                            }
-                            binding.gifImageView2.visibility = View.INVISIBLE
-                            binding.dimBack.visibility = View.INVISIBLE
+                                    override fun onAdLoaded(rewardedAd: RewardedAd) {
+
+                                        mRewardedAd = rewardedAd
+
+                                        mRewardedAd?.show(this@SetLockScreenMultipleActivity) {
+
+                                            fun onUserEarnedReward(rewardItem: RewardItem) {
+                                                Toast.makeText(
+                                                    this@SetLockScreenMultipleActivity,
+                                                    "lock screen add successfully",
+                                                    Toast.LENGTH_SHORT
+                                                ).show()
+
+                                                var mutableListString = mutableListOf<String>()
+                                                for (widget in widgetSelected) {
+                                                    mutableListString.add(widget.name)
+                                                }
+                                                var sctm = System.currentTimeMillis()
+                                                mLockScreenViewModel.addLockscreen(
+                                                    LockScreen(
+                                                        sctm,
+                                                        colorSelected!!,
+                                                        fontSelected!!,
+                                                        listPictures[viewPager2.currentItem].picName,
+                                                        listPictures[viewPager2.currentItem].remBgPicName,
+                                                        mutableListString,
+                                                        topWidget.subtitle,
+                                                        false,
+                                                        ByteArray(0),
+                                                        ""
+                                                    )
+                                                )
+                                                Log.i(
+                                                    "asflanfliafpiqwf",
+                                                    "onCreate: 111111111111111111111111111111111111111111"
+                                                )
+                                                MainLockScreenData.setSP(
+                                                    this@SetLockScreenMultipleActivity, LockScreen(
+                                                        sctm,
+                                                        colorSelected!!,
+                                                        fontSelected!!,
+                                                        listPictures[viewPager2.currentItem].picName,
+                                                        listPictures[viewPager2.currentItem].remBgPicName,
+                                                        mutableListString,
+                                                        topWidget.subtitle,
+                                                        false,
+                                                        ByteArray(0),
+                                                        ""
+                                                    )
+                                                )
+                                                MainLockScreenData.setLSRDEmpty(
+                                                    this@SetLockScreenMultipleActivity,
+                                                    false
+                                                )
+                                                finish()
+                                            }
+                                            Log.i("oaksdoaksd", "onViewCreated: log karddddddddddd")
+                                            onUserEarnedReward(it)
+
+                                        }
+                                        binding.gifImageView2.visibility = View.INVISIBLE
+                                        binding.dimBack.visibility = View.INVISIBLE
+                                    }
+                                })
+
+
                         }
-                    })
 
-
-            }
-
-
-
+                    adOrPurchaseAddLockScreenFragment.show(supportFragmentManager, null)
 
                 } else {
 
@@ -431,14 +437,14 @@ class SetLockScreenMultipleActivity : AppCompatActivity() {
                             ""
                         )
                     )
-                    MainLockScreenData.setLSRDEmpty(this@SetLockScreenMultipleActivity , false)
+                    MainLockScreenData.setLSRDEmpty(this@SetLockScreenMultipleActivity, false)
                     finish()
 
                 }
 
 
             } catch (e: Exception) {
-
+                Log.i("LOG24", "onCreate: ${e.message}")
             }
 
 
